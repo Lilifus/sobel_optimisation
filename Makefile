@@ -2,7 +2,7 @@ CC=gcc
 
 CFLAGS=-g3
 
-OFLAGS=-march=native -O1
+OFLAGS=-march=native -O3 -funroll-loops
 
 all: sobel
 

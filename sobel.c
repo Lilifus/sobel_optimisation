@@ -47,12 +47,23 @@ void grayscale_sampled(u8 *frame)
 //
 i32 convolve_baseline(u8 *m, i32 *f, u64 fh, u64 fw)
 {
+#define UNROLL 8
   i32 r = 0;
 
-  for (u64 i = 0; i < fh; i++)
-    for (u64 j = 0; j < fw; j++)
-      r += m[INDEX(i, j, fw)] * f[INDEX(i, j, fw)];
-  
+  for (u64 i = 0; i < fh; i++){
+    for (u64 j = 0; j < (fw - (fw&(UNROLL-1))); j++){
+      r += m[INDEX(i, j, W * 3)] * f[INDEX(i, j, fw)];
+      r += m[INDEX(i, j+1, W * 3)] * f[INDEX(i, j+1, fw)];
+      r += m[INDEX(i, j+2, W * 3)] * f[INDEX(i, j+2, fw)];
+      r += m[INDEX(i, j+3, W * 3)] * f[INDEX(i, j+3, fw)];
+      r += m[INDEX(i, j+4, W * 3)] * f[INDEX(i, j+4, fw)];
+      r += m[INDEX(i, j+5, W * 3)] * f[INDEX(i, j+5, fw)];
+      r += m[INDEX(i, j+6, W * 3)] * f[INDEX(i, j+6, fw)];
+      r += m[INDEX(i, j+7, W * 3)] * f[INDEX(i, j+7, fw)];
+    }
+    for (u64 j = (fw - (fw&(UNROLL-1))); j < fw; j++)
+      r += m[INDEX(i, j, W * 3)] * f[INDEX(i, j, fw)];
+  }
   return r;
 }
 
@@ -187,7 +198,7 @@ int main(int argc, char **argv)
   mib_per_s = ((f64)(size << 1) / (1024.0 * 1024.0)) / elapsed_s;
   
   //
-  fprintf(stderr, "\n%20llu bytes; %15.3lf ns; %15.3lf ns; %15.3lf ns; %15.3lf MiB/s; %15.3lf %%;\n",
+  fprintf(stderr,"\n%20lu bytes; %15.3lf ns; %15.3lf ns; %15.3lf ns; %15.3lf MiB/s; %15.3lf %%;\n",
 	  (sizeof(u8) * H * W * 3) << 1,
 	  min,
 	  max,

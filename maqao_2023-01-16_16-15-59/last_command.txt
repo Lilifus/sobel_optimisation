@@ -1,0 +1,1 @@
+maqao oneview -R1 uarch=ZEN_V1 sampling-rate=high -- ./sobel in/input.raw out/output.raw 

@@ -1,0 +1,5 @@
+Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
+_ALL;_ALL;_ALL;0.01;99.99;0;8207;0;0;0;0;0;41.03;0;0;
+jormungandr;_ALL;_ALL;0.01;99.99;0;8207;0;0;0;0;0;41.03;0;0;
+jormungandr;4288;_ALL;0.01;99.99;0;8207;0;0;0;0;0;41.03;0;0;
+jormungandr;4288;4288;0.01;99.99;0;8207;0;0;0;0;0;41.03;0;0;

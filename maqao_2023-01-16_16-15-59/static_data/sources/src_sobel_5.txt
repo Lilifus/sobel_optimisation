@@ -1,0 +1,11 @@
+/home/zakaria/Desktop/Work/AP/sobel_optimisation/sobel.c: 75 - 82
+--------------------------------------------------------------------------------
+
+75:     for (u64 j = 0; j < ((W * 3) - 3); j++)
+76:       {
+77: 	gx = convolve_baseline(&cframe[INDEX(i, j, W * 3)], f1, 3, 3);
+78: 	gy = convolve_baseline(&cframe[INDEX(i, j, W * 3)], f2, 3, 3);
+79:       
+80: 	mag = sqrt((gx * gx) + (gy * gy));
+81: 	
+82: 	oframe[INDEX(i, j, W * 3)] = (mag > threshold) ? 255 : mag;

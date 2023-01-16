@@ -1,0 +1,6 @@
+/home/zakaria/Desktop/Work/AP/sobel_optimisation/sobel.c: 52 - 54
+--------------------------------------------------------------------------------
+
+52:   for (u64 i = 0; i < fh; i++)
+53:     for (u64 j = 0; j < fw; j++)
+54:       r += m[INDEX(i, j, fw)] * f[INDEX(i, j, fw)];
