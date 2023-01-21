@@ -1,7 +1,0 @@
-hostname           = "jormungandr"
-cpui_model_name    = "AMD FX(tm)-8350 Eight-Core Processor"
-cpui_cache_size    = "2048 KB"
-cpui_cpu_cores     = "4"
-max_frequency          = "4000000"
-cur_frequency      = "4090024"
-os_version         = "Linux 6.1.6-arch1-1 #1 SMP PREEMPT_DYNAMIC Sat, 14 Jan 2023 13:09:35 +0000"

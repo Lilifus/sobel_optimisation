@@ -1,6 +1,8 @@
 in/*
 out/*
 
+rapport/*
+maqao*
 # Prerequisites
 *.d
 

@@ -1,7 +1,0 @@
-********************************************************************************
-
-MAQAO 2.16.0 - 766cd4a6ff7535ecc31168278a1f4b2786663ebf::20221116-145906 || 2022/11/16
-
-maqao oneview -R1 uarch=ZEN_V1 sampling-rate=high -- ./sobel in/input.raw out/output.raw 
-
-CMD:   /usr/local/bin/maqao lprof  --xp="/home/zakaria/Desktop/Work/AP/sobel_optimisation/maqao_2023-01-16_16-15-59/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/zakaria/Desktop/Work/AP/sobel_optimisation/maqao_2023-01-16_16-15-59/binaries/sobel  in/input.raw out/output.raw

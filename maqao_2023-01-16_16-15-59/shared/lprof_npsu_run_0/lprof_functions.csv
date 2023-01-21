@@ -1,5 +1,0 @@
-function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;cats;label_name;
-8;sobel;convolve_baseline;sobel.c:50-57;51.14;20.98;20.98;20.98;20.98;0;0;1;"100,0,0,0,0,0,0,0,0,0";convolve_baseline;
-9;sobel;sobel_baseline;sobel.c:61-84;45.68;18.74;18.74;18.74;18.74;0;0;1;"100,0,0,0,0,0,0,0,0,0";sobel_baseline;
-6;sobel;grayscale_weighted;sobel.c:15-29;3.17;1.3;1.3;1.3;1.3;0;0;1;"100,0,0,0,0,0,0,0,0,0";grayscale_weighted;
-1004;libc.so.6;__clock_gettime;;0.01;0;0;0;0;0;0;1;"0,0,0,0,100,0,0,0,0,0";__clock_gettime;

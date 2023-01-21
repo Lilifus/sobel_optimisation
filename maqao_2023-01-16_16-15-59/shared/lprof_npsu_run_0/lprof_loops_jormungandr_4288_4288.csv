@@ -1,6 +1,0 @@
-loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;time_deviation;nb_threads;
-5;sobel;sobel_baseline;9;sobel.c:75-82;Innermost;45.67;18.74;;;;;;;
-2;sobel;convolve_baseline;8;sobel.c:53-54;Innermost;34.68;14.23;;;;;;;
-3;sobel;convolve_baseline;8;sobel.c:52-54;Outermost;12.49;5.12;;;;;;;
-0;sobel;grayscale_weighted;6;sobel.c:18-27;Single;3.17;1.3;;;;;;;
-4;sobel;sobel_baseline;9;sobel.c:74-82;Outermost;0.01;0;;;;;;;
